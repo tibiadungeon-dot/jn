@@ -57,13 +57,11 @@
         {
           "id": 1,
           "name": "start",
-          "type": "",
           "x": 160,
           "y": 128,
           "width": 32,
           "height": 32
         },
-
         {
           "id": 2,
           "name": "pc_1",
@@ -103,5 +101,10 @@
       ]
     }
   ],
-  "tilesets": []
+  "tilesets": [
+    {
+      "firstgid": 1,
+      "source": "https://raw.githubusercontent.com/thecodingmachine/workadventure-map-starter-kit/master/tilesets/ground.tsx"
+    }
+  ]
 }
