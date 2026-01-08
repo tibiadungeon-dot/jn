@@ -1,99 +1,140 @@
 {
+  "compressionlevel": -1,
   "height": 8,
-  "width": 10,
-  "tileheight": 32,
-  "tilewidth": 32,
-  "orientation": "orthogonal",
-  "renderorder": "right-down",
-  "version": 1.10,
-  "tiledversion": "1.10.2",
   "infinite": false,
   "layers": [
     {
+      "data": [
+        1,1,1,1,1,1,1,1,1,1,
+        1,1,1,1,1,1,1,1,1,1,
+        1,1,1,1,1,1,1,1,1,1,
+        1,1,1,1,1,1,1,1,1,1,
+        1,1,1,1,1,1,1,1,1,1,
+        1,1,1,1,1,1,1,1,1,1,
+        1,1,1,1,1,1,1,1,1,1,
+        1,1,1,1,1,1,1,1,1,1
+      ],
+      "height": 8,
       "id": 1,
       "name": "Ground",
-      "type": "tilelayer",
-      "width": 10,
-      "height": 8,
       "opacity": 1,
+      "type": "tilelayer",
       "visible": true,
-      "data": [
-        0,0,0,0,0,0,0,0,0,0,
-        0,0,0,0,0,0,0,0,0,0,
-        0,0,0,0,0,0,0,0,0,0,
-        0,0,0,0,0,0,0,0,0,0,
-        0,0,0,0,0,0,0,0,0,0,
-        0,0,0,0,0,0,0,0,0,0,
-        0,0,0,0,0,0,0,0,0,0,
-        0,0,0,0,0,0,0,0,0,0
-      ]
+      "width": 10,
+      "x": 0,
+      "y": 0
     },
     {
+      "data": [
+        2,2,2,2,2,2,2,2,2,2,
+        2,0,0,0,0,0,0,0,0,2,
+        2,0,0,0,0,0,0,0,0,2,
+        2,0,0,0,0,0,0,0,0,2,
+        2,0,0,0,0,0,0,0,0,2,
+        2,0,0,0,0,0,0,0,0,2,
+        2,0,0,0,0,0,0,0,0,2,
+        2,2,2,2,2,2,2,2,2,2
+      ],
+      "height": 8,
       "id": 2,
       "name": "Collisions",
-      "type": "objectgroup",
       "opacity": 1,
+      "type": "tilelayer",
       "visible": true,
-      "objects": [
-        { "x": 0, "y": 0, "width": 320, "height": 32 },
-        { "x": 0, "y": 224, "width": 320, "height": 32 },
-        { "x": 0, "y": 0, "width": 32, "height": 256 },
-        { "x": 288, "y": 0, "width": 32, "height": 256 }
-      ]
+      "width": 10,
+      "x": 0,
+      "y": 0
     },
     {
+      "draworder": "topdown",
       "id": 3,
       "name": "Objects",
-      "type": "objectgroup",
-      "opacity": 1,
-      "visible": true,
       "objects": [
         {
+          "height": 32,
           "id": 1,
           "name": "start",
-          "x": 160,
-          "y": 128,
+          "rotation": 0,
+          "type": "",
+          "visible": true,
           "width": 32,
-          "height": 32
+          "x": 160,
+          "y": 128
         },
         {
+          "height": 32,
           "id": 2,
           "name": "pc_1",
+          "rotation": 0,
           "type": "computer",
-          "x": 64,
-          "y": 64,
+          "visible": true,
           "width": 32,
-          "height": 32
+          "x": 64,
+          "y": 64
         },
         {
+          "height": 32,
           "id": 3,
           "name": "pc_2",
+          "rotation": 0,
           "type": "computer",
-          "x": 192,
-          "y": 64,
+          "visible": true,
           "width": 32,
-          "height": 32
+          "x": 192,
+          "y": 64
         },
         {
+          "height": 32,
           "id": 4,
           "name": "pc_3",
+          "rotation": 0,
           "type": "computer",
-          "x": 64,
-          "y": 160,
+          "visible": true,
           "width": 32,
-          "height": 32
+          "x": 64,
+          "y": 160
         },
         {
+          "height": 32,
           "id": 5,
           "name": "pc_4",
+          "rotation": 0,
           "type": "computer",
-          "x": 192,
-          "y": 160,
+          "visible": true,
           "width": 32,
-          "height": 32
+          "x": 192,
+          "y": 160
         }
+      ],
+      "opacity": 1,
+      "type": "objectgroup",
+      "visible": true,
+      "x": 0,
+      "y": 0
+    }
+  ],
+  "nextlayerid": 4,
+  "nextobjectid": 6,
+  "orientation": "orthogonal",
+  "renderorder": "right-down",
+  "tiledversion": "1.10.2",
+  "tileheight": 32,
+  "tilesets": [
+    {
+      "firstgid": 1,
+      "name": "basic",
+      "tileheight": 32,
+      "tilewidth": 32,
+      "tilecount": 2,
+      "columns": 2,
+      "tiles": [
+        { "id": 0 },
+        { "id": 1, "properties": [ { "name": "collides", "type": "bool", "value": true } ] }
       ]
     }
   ],
-  "tilesets": []
+  "tilewidth": 32,
+  "type": "map",
+  "version": "1.10",
+  "width": 10
 }
